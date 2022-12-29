@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  background-color: #282b30;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.header {
+  background-color: whitesmoke;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.header-logo {
+  width: 100px;
+  padding-left: 12px;
+}
+
+.header-title {
+  font-family: 'Montserrat', 'Roboto';
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 2px;
+}
+
+.button-item {
+  font-family: 'Montserrat', 'Roboto';
+  font-size: 14px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  padding: 5px;
+  letter-spacing: 2px;
+  transition: 0.4s;
+}
+
+.button-item:hover {
+  border-bottom: solid 2px rgb(7, 7, 7);
+  cursor: pointer;
+}
+
+.main-content {
+  flex: 1 0 auto;
+  justify-content: center;
+  color: whitesmoke;
+  padding: 40px;
+  display: grid;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.presentation h2 {
+  font-family: 'Montserrat', 'Roboto';
+  font-weight: 50;
+  letter-spacing: 2px;
+}
+
+.presentation p {
+  font-family: 'Montserrat', 'Roboto';
+  font-weight: 50;
+  letter-spacing: 2px;
+}
+
+.main-image {
+  width: 270px;
+  border-radius: 8px;
+}
+.main-images {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    'item1 item2 item3'
+    'item4 item5 item6'
+    'item7 item8 item9';
+  padding: 40px;
+}
+
+.main-item {
+  font-family: 'Montserrat', 'Roboto';
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 10px;
+  max-width: 270px;
+}
+
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.item4 {
+  grid-area: item4;
+}
+
+.item5 {
+  grid-area: item5;
+}
+
+.item6 {
+  grid-area: item6;
+}
+
+.item7 {
+  grid-area: item7;
+}
+
+.item8 {
+  grid-area: item8;
+}
+
+.item9 {
+  grid-area: item9;
+}
