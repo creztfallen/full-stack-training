@@ -1,0 +1,57 @@
+.img-content {
+  width: 765px;
+  height: 400px;
+}
+
+text-content {
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 2560px) and (min-width: 1440px) {
+  body {
+    background-color: blue;
+    color: aliceblue;
+  }
+  .img-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .title-content {
+    font-size: 72px;
+  }
+  .text-content {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 790px) {
+  .img-content {
+    width: 90%;
+    height: auto;
+  }
+  .text-content {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 425px) {
+  .img-content {
+    width: 100%;
+    height: auto;
+  }
+  .text-content {
+    font-size: 18px;
+    text-align: center;
+  }
+  .title-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .text-content {
+    font-size: 14px;
+  }
+}

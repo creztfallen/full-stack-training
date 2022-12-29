@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+
+.icon {
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button-item {
+  font-size: 20px;
+  padding: 10px 15px;
+  border: 1px solid aliceblue;
+  border-radius: 12px;
+  color: aliceblue;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.button-item:hover {
+  border: 1px solid red;
+}
