@@ -141,9 +141,9 @@
   border-radius: 5px;
   transition: 0.2s;
   gap: 20px;
-  min-width: 300px;
   grid-area: nav;
   cursor: pointer;
+  height: 90%;
 }
 
 .side-bar:hover {
@@ -158,6 +158,7 @@
   cursor: pointer;
   font-family: 'Montserrat', 'Roboto';
   display: flex;
+  min-width: 300px;
   flex-direction: column;
   gap: 10px;
   align-items: center;
@@ -202,4 +203,30 @@
 
 .footer-logo:hover {
   cursor: pointer;
+}
+
+@media (max-width: 630px) {
+  .cardsContainer {
+    grid-template-areas:
+      'main-content'
+      'side-bar';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .side-bar {
+    min-width: auto;
+  }
+  .top-button {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 463px) {
+  .header {
+    justify-content: center;
+  }
+  .footer {
+    justify-content: center;
+  }
 }
