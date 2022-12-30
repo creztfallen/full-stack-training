@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The Witcher</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap"
@@ -14,25 +14,23 @@
   <body>
     <div class="container">
       <header class="header">
-        <img class="header-logo" src="./images/the-witcher-logo.svg" alt="" />
+        <img class="header-logo" src="./images/the-witcher-logo.svg" alt="logo-header" />
         <h1 class="header-title">The Witcher</h1>
-        <div class="buttons">
+        <div class="headerBtnGroup">
           <button class="button-item">Login</button>
           <button class="button-item">Registro</button>
           <button class="button-item">FAQ</button>
         </div>
       </header>
-
-      <section class="main-content">
-        <div class="presentation">
-          <h2>Welcome to The Witcher World</h2>
-          <p>
-            Here's where you'll find what it takes to survive in the world from
-            <strong>The Witcher</strong>!
-          </p>
-        </div>
-
-        <div class="main-images">
+      <section class="presentation" id="presentation">
+        <h2>Welcome to The Witcher World</h2>
+        <p>
+          Here's where you'll find what it takes to survive in the world from
+          <strong>The Witcher</strong>!
+        </p>
+      </section>
+      <section class="cardsContainer">
+        <div class="main-content">
           <div class="main-item item1">
             <img class="main-image" src="./images/bearded-warrior.png" alt="" />
             <h3>Lorem, ipsum.</h3>
@@ -57,7 +55,7 @@
               veritatis sed beatae?
             </p>
           </div>
-          <div class="main-item item4">
+          <div class="main-item">
             <img class="main-image" src="./images/dryad.png" alt="" />
             <h3>Lorem, ipsum.</h3>
             <p>
@@ -65,7 +63,7 @@
               veritatis sed beatae?
             </p>
           </div>
-          <div class="main-item item5">
+          <div class="main-item">
             <img class="main-image" src="./images/gwent-match.png" alt="" />
             <h3>Lorem, ipsum.</h3>
             <p>
@@ -73,7 +71,7 @@
               veritatis sed beatae?
             </p>
           </div>
-          <div class="main-item item6">
+          <div class="main-item">
             <img class="main-image" src="./images/igni.png" alt="" />
             <h3>Lorem, ipsum.</h3>
             <p>
@@ -81,7 +79,7 @@
               veritatis sed beatae?
             </p>
           </div>
-          <div class="main-item item7">
+          <div class="main-item">
             <img class="main-image" src="./images/war.png" alt="" />
             <h3>Lorem, ipsum.</h3>
             <p>
@@ -89,7 +87,7 @@
               veritatis sed beatae?
             </p>
           </div>
-          <div class="main-item item8">
+          <div class="main-item">
             <img class="main-image" src="./images/triss.jpg" alt="" />
             <h3>Lorem, ipsum.</h3>
             <p>
@@ -97,7 +95,7 @@
               veritatis sed beatae?
             </p>
           </div>
-          <div class="main-item item9">
+          <div class="main-item">
             <img class="main-image" src="./images/geralt.jpg" alt="" />
             <h3>Lorem, ipsum.</h3>
             <p>
@@ -106,16 +104,36 @@
             </p>
           </div>
         </div>
-        <nav class="side-bar"></nav>
+         <div class="side-bar">
+            <p class="nav-item">WHO MAY HELP YOU</p>
+            <div class="nav-item">
+              <img class="nav-image" src="./images/geralt.jpg" alt="" />
+              <p>Geralt</p>
+            </div>
+            <div class="nav-item">
+              <img class="nav-image" src="./images/triss.jpg" alt="" />
+              <p>Triss</p>
+            </div>
+            <div class="nav-item">
+              <img class="nav-image" src="./images/dryad.png" alt="" />
+              <p>Dryads</p>
+            </div>
+              <div class="nav-item">
+              <img class="nav-image" src="./images/ciri.png" alt="" />
+              <p>Ciri</p>
+            </div>
+              <div class="nav-item">
+              <img class="nav-image" src="./images/cat-witcher.png" alt="" />
+              <p>Stronghold</p>
+            </div>
+          </div>
       </section>
 
       <footer class="footer">
-        <img
-          class="main-image"
-          class="image"
-          src="./images/logo-onebitcode.svg"
-          alt=""
-        />
+        <img class="footer-logo" src="./images/the-witcher-logo.svg" alt="logo-footer" />
+        <p>THE WHITE FROST</p>
+        <a class="top-button" href="#presentation" class="back-top">Tittle</a>
+        </div>
       </footer>
     </div>
   </body>
