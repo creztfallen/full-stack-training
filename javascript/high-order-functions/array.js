@@ -12,21 +12,21 @@ const charNames = characters.map((characters) => {
   return characters.charName;
 });
 
-console.log(charNames);
+// console.log(charNames);
 
 // Filter
 const charRaces = characters.filter((characters) => {
   return characters.race !== 'Elf';
 });
 
-console.log(charRaces);
+// console.log(charRaces);
 
 // Reduce
 const totalLevel = characters.reduce((accumulatedValue, character) => {
   return accumulatedValue + character.level;
 }, 0);
 
-console.log(totalLevel);
+// console.log(totalLevel);
 
 const charRaces2 = characters.reduce((accumulatedValue, character) => {
   if (accumulatedValue[character.race]) {
@@ -38,4 +38,14 @@ const charRaces2 = characters.reduce((accumulatedValue, character) => {
   return accumulatedValue;
 }, {});
 
-console.log(charRaces2);
+// console.log(charRaces2);
+
+// sort
+
+let charactersCopy = characters.slice().sort((a, b) => {
+  // using slice creates a sorted copy of the array and doesn't change the original;
+  return b.level - a.level;
+});
+
+console.log(characters);
+console.log(charactersCopy);
